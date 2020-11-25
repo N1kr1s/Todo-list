@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(37, 162, 157, 1) 0%,
+    rgba(29, 253, 220, 1) 53%,
+    rgba(148, 245, 198, 1) 100%
+  );
+  color: #e11d74;
+  font-family: "Caveat", cursive;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+}
+
+h1 {
+  text-shadow: 5px 0px rgba(30, 2, 53, 0.7);
+}
+
+header,
+form {
+  min-height: 19vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.4rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background: whitesmoke;
+  color: #e11d74;
+  box-shadow: 5px 6px 8px 0.5px rgba(0, 0, 0, 0.3);
+  border-radius: 1.7rem;
+}
+
+form button {
+  color: #e11d74;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 0.3rem;
+}
+
+form button:hover {
+  background: #e11d74;
+  color: whitesmoke;
+}
+
+.todo_box {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.todo_list {
+  min-width: 25%;
+  list-style: none;
+}
+
+.task_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task_li {
+  background-color: whitesmoke;
+  flex-basis: 20rem;
+  flex-shrink: 0;
+  margin: 0.2rem;
+  font-size: 1.5rem;
+  box-shadow: 5px 6px 8px 1px rgba(0, 0, 0, 0.3);
+  padding: 0rem 0.4rem;
+  border-radius: 1.7rem;
+}
+
+.complete_button,
+.delete_button {
+  background-color: #e11d74;
+  color: whitesmoke;
+  border: none;
+  padding: 0.4rem;
+  margin: 0.1rem;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 5px 6px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 1.7rem;
+  transition: 0.3s;
+}
+
+.delete_button:hover {
+  transform: rotate(180deg);
+}
+
+.complete_button {
+  background-color: rgb(56, 4, 99);
+}
+
+.complete_button:hover {
+  transform: scale(1.2, 1.1);
+}
+
+/* remove icon click
+<i class="fas fa-trash-alt"></i>
+<i class="fas fa-clipboard-check"></i>*/
+
+.fa-trash-alt,
+.fa-clipboard-check {
+  pointer-events: none;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.6;
+  transition: 1s;
+}
+
+.animation {
+  transform: translateY(8rem) rotate(20deg);
+  opacity: 0;
+  transition: 1.4s;
+}
+
